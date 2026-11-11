@@ -4,9 +4,9 @@ Install:
     python -m pip install "dash>=2.17,<4" "plotly>=5.22,<7" "numpy>=1.24"
 Run:
     python multivariable_limits.py
-Then open http://127.0.0.1:8050. Stop with Ctrl+C.
+Then open the local link printed in the terminal. Stop with Ctrl+C.
 
-Optional: python multivariable_limits.py --port 8051
+Use --port to choose a different local port if needed.
 The server binds to localhost; no account, external data, or notebook is needed.
 All application code, styles, and mathematical examples are in this file.
 """

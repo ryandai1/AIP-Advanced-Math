@@ -19,10 +19,10 @@ Choose an application and run its command:
 | --- | --- | --- |
 | Spherical coordinates | `python spherical_coordinates.py` | A Matplotlib window |
 | Quadric surfaces | `python quadric_surfaces.py` | A Matplotlib window |
-| Multivariable limits | `python multivariable_limits.py` | Your browser at <http://127.0.0.1:8050> |
+| Multivariable limits | `python multivariable_limits.py` | A local website in your browser |
 
-For the limits app, open the browser address after starting the server. Stop it
-with Ctrl+C; use `python multivariable_limits.py --port 8051` if port 8050 is busy.
+For the limits app, open the local link printed in the terminal after starting
+the server. Stop it with Ctrl+C; use `--port` to choose a different port if needed.
 It includes five examples, three linked views, adjustable approach paths, and a
 guided comparison showing why agreeing straight paths are inconclusive.
 
