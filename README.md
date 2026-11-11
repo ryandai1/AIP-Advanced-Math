@@ -6,30 +6,37 @@ This repository is built for current and future students—a shared resource tha
 
 ## Getting Started
 
-Download a `.py` file, install its required packages, and run it.
+Use Python 3.10 or newer. Download or clone this repository, open a terminal in
+its folder, and install the packages used by the visualizations:
 
 ```bash
-pip install numpy matplotlib
-python spherical_coordinates.py
+python -m pip install "numpy>=1.24" matplotlib "dash>=2.17,<4" "plotly>=5.22,<7"
 ```
 
-### Multivariable limits lab
+Choose an application and run its command:
 
-Explore five examples with linked 3D surfaces, input paths, and output graphs.
-Compare up to three paths, animate approaches from either sign of `t`, and use
-the guided curved-path comparison to see why agreeing straight lines are
-inconclusive. Exact algebraic limits and a global existence proof are clearly
-separated from numerical observations.
+| Application | Run command | Opens in |
+| --- | --- | --- |
+| Spherical coordinates | `python spherical_coordinates.py` | A Matplotlib window |
+| Quadric surfaces | `python quadric_surfaces.py` | A Matplotlib window |
+| Multivariable limits | `python multivariable_limits.py` | Your browser at <http://127.0.0.1:8050> |
+
+For the limits app, open the browser address after starting the server. Stop it
+with Ctrl+C; use `python multivariable_limits.py --port 8051` if port 8050 is busy.
+It includes five examples, three linked views, adjustable approach paths, and a
+guided comparison showing why agreeing straight paths are inconclusive.
+
+Each application is self-contained in its named `.py` file. Its opening docstring
+lists the packages needed if you prefer to download and run only that app.
+
+## Optional Checks
+
+The `tests/` folder contains automated checks for the multivariable limits app;
+it is not another application and is not needed to launch the lab.
 
 ```bash
-python -m pip install "dash>=2.17,<4" "plotly>=5.22,<7" "numpy>=1.24"
-python multivariable_limits.py
+python -m unittest discover -s tests -v
 ```
-
-Open <http://127.0.0.1:8050>. Use `--port 8051` to choose another port.
-The complete application is in `multivariable_limits.py`.
-Run its mathematical and application checks with
-`python -m unittest discover -s tests -v`.
 
 ## Contributing
 
