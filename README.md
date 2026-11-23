@@ -28,6 +28,7 @@ Choose an application and run its command:
 | [Spherical coordinates](spherical_coordinates.py) | `python spherical_coordinates.py` | A Matplotlib window |
 | [Quadric surfaces](quadric_surfaces.py) | `python quadric_surfaces.py` | A Matplotlib window |
 | [Multivariable limits](multivariable_limits.py) | `python multivariable_limits.py` | A local website in your browser |
+| [Tangent planes and normal lines](tangent_planes.py) | `python tangent_planes.py` | A local website in your browser |
 
 Each application is self-contained in its named `.py` file. Its opening docstring lists the packages needed if you prefer to download and run only that app. The Matplotlib applications require a desktop environment to use their interactive windows.
 
@@ -55,6 +56,12 @@ python multivariable_limits.py --port 8051
 ```
 
 The app includes five examples, three linked views, adjustable approach paths, and a guided comparison showing why agreement along every straight line is still inconclusive. It also illustrates excluded domain paths and a squeeze-theorem proof for a limit that exists.
+
+### Tangent Planes and Normal Lines
+
+Rotate a 3D level surface, move the contact point, and compare two probes that move the same signed distance along a tangent direction and the normal line. The app updates the gradient, equations, and directional derivatives as you explore. Start with the sphere `x² + y² + z² = 9` at `P = (1, 2, 2)`, switch to the top of the sphere, or try the graph `z = (x² + 2y²)/4`. Toggle the surface path to see a curve with the same initial tangent direction.
+
+Open the local link printed in the terminal (by default, `http://127.0.0.1:8050`). Use `python tangent_planes.py --port 8051` to run both browser apps at the same time.
 
 ## Contributing
 
